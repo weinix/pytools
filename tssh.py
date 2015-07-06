@@ -86,15 +86,10 @@ if __name__ == '__main__':
     while True:
         try:
             server = raw_input()
-            print "server: %s" % server
             servers.append( server )
         except EOFError:
             break
 
-
-
-    print servers
-    
     tssh = Ssher()
     tssh.thread_count = args.threads_no 
     
